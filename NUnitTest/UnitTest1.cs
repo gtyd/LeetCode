@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using ConsoleApp;
 
 namespace Tests
 {
@@ -12,7 +13,8 @@ namespace Tests
         [Test]
         public void Test1()
         {
-            Assert.Pass();
+            var result = new LengthOfLongestSubstringSolution().LengthOfLongestSubstring("abba");
+            Assert.AreEqual(result, 2);
         }
     }
 }

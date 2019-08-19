@@ -5,8 +5,17 @@ using System.Linq;
 using System.Threading.Tasks;
 namespace ConsoleApp
 {
+    /// <summary>
+    /// 两数之和 
+    /// </summary>
     public class TwoSumSolution
     {
+        /// <summary>
+        /// 两次遍历
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public int[] TwoSum(int[] nums, int target)
         {
             var rs = new List<int>();
@@ -30,12 +39,19 @@ namespace ConsoleApp
             return rs.ToArray();
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="nums"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
         public int[] TwoSumV2(int[] nums, int target)
         {
             var rs = new List<int>();
             var list = nums.ToList();
             for (int i = 0; i < nums.Length; i++)
             {
+                //取target和value之差diff，若diff在nums中，则返回其索引
                 var v = target - list[i];
                 if (list.Contains(v))
                 {
