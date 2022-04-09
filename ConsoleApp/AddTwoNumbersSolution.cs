@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using ConsoleApp.Models;
 
 namespace ConsoleApp
 {
@@ -56,17 +57,5 @@ namespace ConsoleApp
             }
             return cur;
         }
-    }
-
-    /// <summary>
-    /// 模拟链表
-    /// </summary>
-    public class ListNode
-    {
-        public int val;
-
-        public ListNode next;
-
-        public ListNode(int x) { val = x; }
     }
 }

@@ -1,10 +1,7 @@
-﻿using NUnit.Framework;
-using ConsoleApp;
-using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using ConsoleApp;
+using NUnit.Framework;
 
-namespace ConsoleApp.Tests
+namespace NUnitTest
 {
     [TestFixture()]
     public class CoinChangeSolutionTests
